@@ -14,10 +14,9 @@ $(document).ready(function(){
     $('#losses').html(losses);
     $('#player-input').html(playerTotal);
 
-    domReset();
 
     function domReset(){
-        randomNumber = Math.floor(Math.random() * 99 + 19);
+        randomNumber = Math.floor(Math.random() * 120 + 19);
         console.log("new random number: " + randomNumber);
         crystal1 = Math.floor(Math.random() * 12 + 1);
         crystal2 = Math.floor(Math.random() * 12 + 1);
@@ -27,6 +26,8 @@ $(document).ready(function(){
         $('#goal-number').html(randomNumber);
         $('#player-input').html(playerTotal);
     }; 
+
+    domReset();
 
     function updateWins(){
         wins++;
