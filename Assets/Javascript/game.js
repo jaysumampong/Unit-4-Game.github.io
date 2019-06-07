@@ -8,8 +8,8 @@ $(document).ready(function(){
     let crystal3 = Math.floor(Math.random() * 12 + 1);
     let crystal4 = Math.floor(Math.random() * 12 + 1);
 
-    let randomNumber = Math.floor(Math.random() * 99 + 19);
-    console.log("new random number: " + randomNumber);
+    let randomNumber = Math.floor(Math.random() * 120 + 19);
+    console.log(randomNumber);
     $('#wins').html(wins);
     $('#losses').html(losses);
     $('#player-input').html(playerTotal);
@@ -19,6 +19,7 @@ $(document).ready(function(){
         randomNumber = Math.floor(Math.random() * 120 + 19);
         console.log("new random number: " + randomNumber);
         crystal1 = Math.floor(Math.random() * 12 + 1);
+        console.log("new crystal number: " + crystal1);
         crystal2 = Math.floor(Math.random() * 12 + 1);
         crystal3 = Math.floor(Math.random() * 12 + 1);
         crystal4 = Math.floor(Math.random() * 12 + 1);
@@ -43,7 +44,7 @@ $(document).ready(function(){
 
     $('#red-crystal').on('click', function(){
         playerTotal = playerTotal + crystal1;
-        console.log("new user total: " + playerTotal);
+        console.log(playerTotal);
         $('#player-input').html(playerTotal);
         if (playerTotal === randomNumber){
             updateWins();

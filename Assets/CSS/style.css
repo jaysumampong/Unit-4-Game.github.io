@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
 }
+/* need to figure out how to create borders that frame the entire game */
+/* may need tutoring on css */
 body {
     width: 40%;
     background-image: url("../Images/unit-game-4-background.png");
