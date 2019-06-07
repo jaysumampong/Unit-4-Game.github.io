@@ -1,3 +1,44 @@
 * {
     box-sizing: border-box;
 }
+body {
+    width: 40%;
+    background-image: url("../Images/unit-game-4-background.png");
+    display: block;
+}
+header {
+    background-color: orange;
+    width: 50%;
+    padding: 30px;
+    color:white;
+    font-weight: bold;
+    font-size: 30px;
+}
+.container {
+    color:green;
+    background-color: aliceblue;
+}
+
+.greenbox {
+    background-color: green;
+    padding: 30px;
+    width: 25%;
+    float: left;
+}
+
+.bluebox {
+    background-color: royalblue;
+    padding:30px;
+    width: 15%;
+    float: left;
+}
+
+.buttons{
+    
+}
+
+.score{
+    background-color: aqua;
+}
+
+

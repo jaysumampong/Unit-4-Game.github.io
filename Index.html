@@ -11,9 +11,8 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>CrystalsCollector!</header>
-    </div>
+    <header>CrystalsCollector!</header>
+
     <div class="container">
         <p>You will be given a random number at the start of the game.</p>
         <p>There are Four crystals below. By clicking on a crystal you will add a specific amount of points to your
@@ -25,7 +24,7 @@
     </div>
     <!-- The number the player is trying to reach. -->
     <div class="greenbox">
-            <span id="goal-number"></span>
+        <span id="goal-number"></span>
     </div>
 
     <div class="bluebox">
@@ -34,18 +33,26 @@
 
     </div>
 
-    <button id="red-crystal"></button>
-    <button id="blue-crystal"></button>
-    <button id="yellow-crystal"></button>
-    <button id="green-crystal"></button>
+    <div class="buttons">
+        <button id="red-crystal"><img src="Assets/Images/red.png"></button>
+        <button id="blue-crystal"><img src="Assets/Images/blue.png"></button>
+        <button id="yellow-crystal"><img src="Assets/Images/yellow.png"></button>
+        <button id="green-crystal"><img src="Assets/Images/green.png"></button>
+    </div>
 
     <div>
         <span id="goal-number"></span>
     </div>
-    <!-- bellow is the total returned number for the crystals -->
-    <div>
+
+    <div class="score">
+        <p>Your Total Score is:</p>
+    </div>
+
+    <div class="score">
         <span id="player-input"></span>
     </div>
+
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="Assets/Javascript/game.js"></script>
